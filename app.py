@@ -19,5 +19,5 @@ def sentiment_analysis():
     return jsonify({'prediction': prediction})
 
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", 8081))  # Use PORT from environment or default to 8081
+    port = int(os.getenv("PORT", 8080))  # Use PORT from environment or default to 8081
     app.run(host='0.0.0.0', port=port)
